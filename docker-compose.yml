@@ -1,0 +1,12 @@
+services:
+  app:
+    image: gym:1.0
+    stdin_open: true  # Keep stdin open (useful for interactive shells)
+    tty: true         # Allocate a pseudo-TTY
+    command: bash     # Start the container with bash
+    environment:
+      - ID_INSTANCE=ID_INSTANCE
+      - API_TOKEN_INSTANCE=API_TOKEN_INSTANCE
+      - GEMINI_API_KEY=GEMINI_API_KEY
+    volumes:
+      - ./src:/usr/src/app

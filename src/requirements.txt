@@ -1,0 +1,2 @@
+whatsapp-api-client-python
+google-generativeai
